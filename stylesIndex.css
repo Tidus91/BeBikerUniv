@@ -1,0 +1,101 @@
+h2{
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.firstDiv{
+    text-align: center;
+}
+
+.firstDiv img{
+    margin:0;
+    max-width: 100%;
+}
+
+.secondDiv{
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    padding:1rem;
+}
+
+.secondDiv h3{
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+}
+
+.secondDiv_LinkSoinVelo{
+    background-color: #39D6C0;
+    padding-bottom: 3rem;
+}
+
+.secondDiv_LinkSoinVelo p{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.secondDiv_LinkSoinVelo a{
+    text-decoration: none;
+    color:black;
+    background-color: white;
+    padding:1rem 3rem;
+    border-radius: 8px;
+}
+
+.secondDiv_LinkAtelier{
+    background-color: white;
+    padding-bottom: 2rem;
+}
+
+.secondDiv_LinkAtelier p{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.secondDiv_LinkAtelier a{
+    text-decoration: none;
+    color:white;
+    background-color: #39D6C0;
+    padding:1rem 3rem;
+    border-radius: 8px;
+}
+
+.secondDiv_List{
+    color: white;
+    background-image: url("https://s3-alpha-sig.figma.com/img/cc97/beae/750c8553f208040542553e1332303fc1?Expires=1633910400&Signature=LhJzB40IBlZRWg0aBcKqEkglHmQnjDU85t78yycsphFFK2kadA82oL0R7vbIw-rlZhPqEaU3Ur7HVnEBEv1QunBHTHhv9ZEG9x9vXIsVJwD6bCPOix1CUtfSPUVqmrammTlmks0pARJAjtSGf1xDxaWBfaknYPaPQvFDD6Grgw54Q6waSSEWdItstHiYrtQ7x2cPD9wQirMqCny0xdIjOzd4rWErWjvJcP7g9n8335oRd-yvitoFKYfUWbz6Aa9vzyN52Bh9RHxMUlB4WbWWENcs-BmbvSf1HHXacXGVXewu7TRME1h~9KrD1rGPzsGl2OQy9yfd5KBdNQRXPfVOeA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+}
+
+.secondDiv_List ul{
+    list-style: none;
+}
+
+.secondDiv_List a{
+    text-decoration: none;
+    color:white;
+    background-color: #39D6C0;
+    padding:1rem 3rem;
+    border-radius: 8px;
+}
+
+.thirdDiv {
+    margin-top:1rem;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thirdDiv img{
+    max-height: 350px;
+    max-width: 90%;
+}

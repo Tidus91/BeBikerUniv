@@ -1,0 +1,18 @@
+{
+  "name": "bebiker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.pug",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel index.pug"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "pug": "^3.0.2"
+  }
+}

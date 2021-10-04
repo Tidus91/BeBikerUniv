@@ -1,0 +1,26 @@
+footer{
+    background-color: black;
+}
+
+footer p{
+    padding-top:2rem;
+    padding-left: 1.5rem;
+    color:white;
+}
+
+footer nav{
+    padding-top : 1rem;
+    padding-bottom: 2rem;
+}
+
+footer li{
+    margin: 1rem;
+}
+
+footer a{
+    color:#39D6C0;
+}
+
+footer a:hover{
+    color:blue;
+}
