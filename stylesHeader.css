@@ -28,6 +28,7 @@ header li{
     line-height: 28px;
     letter-spacing: 0.1em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 
@@ -45,5 +46,5 @@ header a{
 }
 
 header a:hover{
-    color: grey;
+    color: var(--grey-light);
 }

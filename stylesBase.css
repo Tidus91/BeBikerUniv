@@ -1,24 +1,42 @@
+html{
+    --primary:#39D6C0;
+    --primary-dark:#18776A;
+    --grey-light:#F5F5F5;
+}
+
+body{
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+
 footer{
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding:1.4em;
+    padding-bottom: 2em;
+    padding-top:2em;
+    gap:2em;
 }
 
 footer p{
-    padding-top:2rem;
-    padding-left: 1.5rem;
+    margin:0;
     color:white;
+    line-height: 1.5em;
 }
 
-footer nav{
-    padding-top : 1rem;
-    padding-bottom: 2rem;
+footer ul{
+    margin: 0;
+    padding:0;
 }
 
 footer li{
-    margin: 1rem;
+    margin-top: 1rem;
 }
 
 footer a{
-    color:#39D6C0;
+    color:var(--primary);
 }
 
 footer a:hover{

@@ -1,5 +1,5 @@
 h2{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -9,24 +9,31 @@ h2{
 
 }
 
-.firstDiv{
+.firstDiv h2{
+    margin-left: 1em;
+    margin-right: 1em;
     text-align: center;
 }
 
+.firstDivImgWrapper{
+    width: 100%;
+    height:250px;
+}
+
 .firstDiv img{
-    margin:0;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .secondDiv{
     display:flex;
     flex-direction: column;
     background-color: black;
-    padding:1rem;
 }
 
 .secondDiv h3{
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -35,13 +42,23 @@ h2{
 }
 
 .secondDiv_LinkSoinVelo{
-    background-color: #39D6C0;
+    background-color:var(--primary);
     padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.secondDiv_LinkSoinVelo h3{
+    margin:0;
 }
 
 .secondDiv_LinkSoinVelo p{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-top: 1.3em;
+    margin-bottom: 1.8em;
 }
 
 .secondDiv_LinkSoinVelo a{
@@ -50,52 +67,132 @@ h2{
     background-color: white;
     padding:1rem 3rem;
     border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
 }
 
 .secondDiv_LinkAtelier{
     background-color: white;
-    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding:2em;
+    margin-bottom: 1.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.secondDiv_LinkAtelier h3{
+    margin:0;
 }
 
 .secondDiv_LinkAtelier p{
-    padding-left: 3rem;
-    padding-right: 3rem;
+    margin-top: 1.3em;
+    margin-bottom: 1.8em;
 }
 
 .secondDiv_LinkAtelier a{
     text-decoration: none;
     color:white;
-    background-color: #39D6C0;
+    background-color:var(--primary);
     padding:1rem 3rem;
     border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
 }
 
 .secondDiv_List{
     color: white;
-    background-image: url("https://s3-alpha-sig.figma.com/img/cc97/beae/750c8553f208040542553e1332303fc1?Expires=1633910400&Signature=LhJzB40IBlZRWg0aBcKqEkglHmQnjDU85t78yycsphFFK2kadA82oL0R7vbIw-rlZhPqEaU3Ur7HVnEBEv1QunBHTHhv9ZEG9x9vXIsVJwD6bCPOix1CUtfSPUVqmrammTlmks0pARJAjtSGf1xDxaWBfaknYPaPQvFDD6Grgw54Q6waSSEWdItstHiYrtQ7x2cPD9wQirMqCny0xdIjOzd4rWErWjvJcP7g9n8335oRd-yvitoFKYfUWbz6Aa9vzyN52Bh9RHxMUlB4WbWWENcs-BmbvSf1HHXacXGVXewu7TRME1h~9KrD1rGPzsGl2OQy9yfd5KBdNQRXPfVOeA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+    background-image: url("./img/velo-bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding:1em;
 }
 
 .secondDiv_List ul{
     list-style: none;
+    padding:0;
+}
+
+.vector{
+    width: 4em;
+    height: 4em;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.grey-separator{
+    width: 4.4em;
+    height: 2em;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./img/separateur.svg");
+}
+
+.vector--gps{
+    background-image: url("./img/map-pin.svg");
+}
+
+.vector--user{
+    background-image: url("./img/user-check.svg");
+}
+
+.vector--watch{
+    background-image: url("./img/watch.svg");
+}
+
+.vector--tool{
+    background-image: url("./img/tool.svg");
+}
+
+.secondDiv_List li h4{
+    margin-top: .4em;
+    margin-bottom: .4em;
+    font-weight:500;
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.3em;
+}
+
+.secondDiv_List li{
+    margin: 10px 0;
+}
+
+.secondDiv_List li p{
+    font-weight:400;
+    font-family: 'Roboto',sans-serif;
+    margin-bottom:3em;
 }
 
 .secondDiv_List a{
     text-decoration: none;
     color:white;
-    background-color: #39D6C0;
-    padding:1rem 3rem;
+    background-color:var(--primary);
+    padding:1.4rem 3rem;
     border-radius: 8px;
+    text-align: center;
 }
 
 .thirdDiv {
-    margin-top:1rem;
+    margin-top:3rem;
+    margin-bottom: 3rem;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    gap: 0.6em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
 }
 
 .thirdDiv img{
-    max-height: 350px;
-    max-width: 90%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.thirdDivImgWrapper{
+    width: 100%;
+    height:250px;
 }
