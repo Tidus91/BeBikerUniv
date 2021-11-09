@@ -9,6 +9,11 @@ h2{
 
 }
 
+.firstDiv{
+    display:flex;
+    flex-direction:column;
+}
+
 .firstDiv h2{
     margin-left: 1em;
     margin-right: 1em;
@@ -195,4 +200,46 @@ h2{
 .thirdDivImgWrapper{
     width: 100%;
     height:250px;
+}
+
+/* tablette */
+
+@media (min-width:768px) and (max-width: 1280px)
+{
+
+.firstDiv{
+    flex-direction:row;
+    align-items:center;
+    height:26em;
+}
+
+.firstDiv h2{
+    margin: 0em;
+    padding-left: 1em;
+    padding-right: 2em;
+    text-align: unset;
+    width: calc(50vw - 3em);
+    font-size:2.6em;
+}
+
+.firstDivImgWrapper{
+    width: 50vw;
+    height:100%;
+}
+
+.secondDiv_LinkSoinVelo{
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+.secondDiv_LinkAtelier{
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
+
+.secondDiv_LinkSoinVelo a{
+    text-align: left;
+    flex-grow:0;
+}
+
 }
