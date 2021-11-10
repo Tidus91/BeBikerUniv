@@ -42,3 +42,44 @@ footer a{
 footer a:hover{
     color:blue;
 }
+
+@media (min-width:768px)
+{
+
+footer{
+    display: flex;
+    flex-direction: row;
+    padding:2em;
+    padding-top: 1.4em;
+    padding-bottom: 6em;
+    gap:0;
+}
+
+footer nav{
+    width:50%;
+}
+
+footer p{
+    width: 50%;
+}
+
+}
+
+@media (min-width:1280px)
+{
+
+footer{
+    padding:6em;
+    padding-top: 2em;
+    padding-bottom: 6em;
+}
+
+footer nav{
+    width:50%;
+}
+
+footer p{
+    width: 50%;
+}
+
+}

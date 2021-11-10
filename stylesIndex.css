@@ -48,13 +48,31 @@ h2{
 
 .secondDiv_LinkSoinVelo{
     background-color:var(--primary);
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5em;
+    margin-right: 1em;
+    margin-left: 1em;
+    justify-content: space-between;
+}
+
+.secondDiv_LinkSoinVelo_left{
     padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     padding:2em;
-    margin-top: 1.5em;
-    margin-right: 1em;
-    margin-left: 1em;
+}
+
+.secondDiv_image{
+    height:280px;
+    width: clamp(200px, 66%, 450px);
+}
+
+.secondDiv_image img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
 }
 
 .secondDiv_LinkSoinVelo h3{
@@ -70,7 +88,7 @@ h2{
     text-decoration: none;
     color:black;
     background-color: white;
-    padding:1rem 3rem;
+    padding: 1em 2rem;
     border-radius: 8px;
     text-align: center;
     font-weight: 500;
@@ -79,11 +97,18 @@ h2{
 .secondDiv_LinkAtelier{
     background-color: white;
     display: flex;
-    flex-direction: column;
-    padding:2em;
+    flex-direction: row-reverse;
     margin-bottom: 1.5em;
     margin-right: 1em;
     margin-left: 1em;
+    justify-content: flex-end;
+}
+
+.secondDiv_LinkAtelier_left{
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    padding:2em;
 }
 
 .secondDiv_LinkAtelier h3{
@@ -99,7 +124,7 @@ h2{
     text-decoration: none;
     color:white;
     background-color:var(--primary);
-    padding:1rem 3rem;
+    padding: 1em 2rem;
     border-radius: 8px;
     text-align: center;
     font-weight: 500;
@@ -179,6 +204,10 @@ h2{
     text-align: center;
 }
 
+.secondDiv_image{
+    display: none;
+}
+
 .thirdDiv {
     margin-top:3rem;
     margin-bottom: 3rem;
@@ -204,7 +233,7 @@ h2{
 
 /* tablette */
 
-@media (min-width:768px) and (max-width: 1280px)
+@media (min-width:768px)
 {
 
 .firstDiv{
@@ -237,9 +266,101 @@ h2{
     margin-left: 1.5em;
 }
 
+.secondDiv_LinkAtelier_left{
+    align-items: baseline;
+}
+
+.secondDiv_LinkSoinVelo_left{
+    align-items: baseline;
+}
+
 .secondDiv_LinkSoinVelo a{
     text-align: left;
     flex-grow:0;
+}
+
+.secondDiv_image{
+    display: unset;
+}
+
+.secondDiv_List{
+    color: white;
+    background-image: url("./img/velo-bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1.5em;
+}
+
+.secondDiv_List ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secondDiv_List li{
+    width: 50%;
+}
+
+.secondDiv_List a{
+    padding:1.4rem 7rem;
+}
+
+.thirdDiv{
+    flex-direction: row;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    justify-content: space-between;
+}
+
+.thirdDivImgWrapper{
+    width: calc(33vw - 1.5em);
+    height: 400px;
+}
+
+}
+
+@media (min-width:1280px)
+{
+
+.firstDiv h2{
+    margin: auto;
+    text-align: unset;
+    width: calc(50vw - 8em);
+    font-size:2.6em;
+}
+
+.secondDiv_LinkSoinVelo{
+    margin-right: 5em;
+    margin-left: 5em;
+}
+
+.secondDiv_LinkAtelier{
+    margin-right: 5em;
+    margin-left: 5em;
+}
+
+.secondDiv_List ul{
+    gap: 2em;
+    justify-content: center;
+}
+
+.secondDiv_List li{
+    width: calc(25% - 4em);
+}
+
+.thirdDiv{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
+.thirdDivImgWrapper{
+    width: calc(33vw - 4.5em);
+    height: 500px;
 }
 
 }
