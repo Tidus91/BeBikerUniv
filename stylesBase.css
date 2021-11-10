@@ -21,6 +21,7 @@ footer{
 }
 
 footer p{
+    font-style: italic;
     margin:0;
     color:white;
     line-height: 1.5em;
@@ -43,6 +44,8 @@ footer a:hover{
     color:blue;
 }
 
+/* tablette */
+
 @media (min-width:768px)
 {
 
@@ -64,6 +67,8 @@ footer p{
 }
 
 }
+
+/* ordinateur */
 
 @media (min-width:1280px)
 {

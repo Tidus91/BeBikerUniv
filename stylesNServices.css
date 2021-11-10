@@ -5,8 +5,12 @@
     padding-bottom : 3rem;
 }
 
-.NosServices img{
+.nosServices__image{
     display:none;
+}
+
+.NosServices h4{
+    font-size: 1.5em;
 }
 
 .nosServices__domicile{
@@ -35,40 +39,96 @@
 
 
 
-@media (min-width:768px) and (max-width: 1280px){
+@media (min-width:768px){
     .title{
         text-align: center;
     }
 
     .NosServices{
+        padding:2em;
+        gap: 2em;
         display:flex;
-        flex-direction:column;
+        flex-direction:row;
         flex-wrap:wrap;
+        justify-content: space-between;
+    }
+
+    .nosServices__image{
+        display:block;
+        width: 100%;
+        max-height: 330px;
+        max-width: 300px;
     }
 
     .NosServices img{
-        display:unset;
-        max-width:20%;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .nosServices__domicile{
-        max-width:70%;
+        margin:0;
+        max-width:100%;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5em;
     }
 
     .nosServices__supportClient{
-        max-width:70%;
+        margin:0;
+        max-width:100%;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1.5em;
+    }
+
+    .nosServices__supportClient_left{
+        display: flex;
+        flex-direction: column;
     }
 
     .nosServices__serviceExpress{
-        max-width:50%;
+        margin:0;
+        max-width:calc(50% - 1em);
     }
 
     .nosServices__atelier{
-        max-width:50%;
+        margin:0;
+        max-width:calc(50% - 1em);
     }
 }
 
 @media (min-width:1280px){
 
+    .nosServices__domicile{
+        gap: 4em;
+        margin-right: 12rem;
+        margin-left: 6em;
+    }
+
+    .nosServices__supportClient{
+        gap: 1.5em;
+        margin-right: 6rem;
+        margin-left: 12rem;
+    }
+
+    .nosServices__image{
+        display:block;
+        width: 100%;
+        max-height: 280px;
+        max-width: 300px;
+    }
+
+    .nosServices__serviceExpress{
+        max-width: calc(50% - 5em);
+        margin-left: 4rem;
+    }
+
+    .nosServices__atelier{
+        max-width: calc(50% - 5em);
+        margin-right: 4rem;
+    }
 
 }
+

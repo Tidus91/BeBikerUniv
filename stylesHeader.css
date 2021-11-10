@@ -6,6 +6,7 @@ header{
 }
 
 header img{
+    margin-top: 2em;
     height: 100px;
     width:100px; 
 }
@@ -56,6 +57,10 @@ header a:hover{
 
 header{
     flex-direction: row;
+}
+
+header img{
+    margin-top:0em;    
 }
 
 header img{
