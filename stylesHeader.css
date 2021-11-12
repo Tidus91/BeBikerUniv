@@ -21,7 +21,7 @@ header ul{
 
 header li{
     text-align: center;
-    padding-bottom: 2rem;
+    padding: 1rem;
     font-family: Pathway Gothic One;
     font-size: 24px;
     font-style: normal;
@@ -48,6 +48,14 @@ header a{
 
 header a:hover{
     color: var(--grey-light);
+}
+
+header li:hover{
+    background-color: var(--header-grey);
+}
+
+header li.active{
+    background-color: var(--header-grey);
 }
 
 /* tablette */
@@ -83,10 +91,12 @@ header ul{
 }
 
 header li{
+    list-style: none;
     height: auto;
     padding:1em;
     padding-top:1.6em;
     padding-bottom:1.6em;
+    cursor: pointer;
 }
 
 header a{

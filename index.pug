@@ -12,14 +12,14 @@ block main
             div(class="secondDiv_LinkSoinVelo_left")
                 h3 Nous aimons le vélo
                 p Au-delà de l’objet, le vélo est pour nous une philosophie, un art de vivre. Vous pouvez nous faire confiance.
-                a(href="") En savoir plus
+                a(href="quiSommeNous.pug") En savoir plus
             div(class="secondDiv_image")
                 img(alt="image velo2" src="./img/homme.png")
         div(class="secondDiv_LinkAtelier")
             div(class="secondDiv_LinkAtelier_left")
                 h3 Un atelier professionnel
                 p C’est dans notre atelier que nous réparons les vélos de nos clients et que nous testons les nouveaux produits. Aucun détail ne nous échappe.
-                a(href="") En savoir plus
+                a(href="quiSommeNous.pug") En savoir plus
             div(class="secondDiv_image")
                 img(alt="image velo2" src="./img/zoom-velo.png")
         div(class="secondDiv_List")
@@ -44,7 +44,7 @@ block main
                     div(class="grey-separator")
                     h4 Autres services
                     p Nous nous déplaçons pour récupérer et vous ramener votre vélo réparé chez vous, en nous adaptant à vos disponibilités.
-            a(href="") En savoir plus
+            a(href="services.pug") En savoir plus
     div(class="thirdDiv")
         div(class="thirdDivImgWrapper")
             img(alt="image velo1" src="./img/lampe.jpg")
@@ -52,3 +52,6 @@ block main
             img(alt="image velo2" src="./img/velo-2.jpg")
         div(class="thirdDivImgWrapper")
             img(alt="image velo3" src="./img/velo-3.jpg")
+
+    script(type='text/javascript').
+        document.getElementById("accueil").classList.add("active");

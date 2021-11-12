@@ -24,13 +24,17 @@
 }
 
 .mainContent a{
-    background-color: #39D6C0;
+    background-color: var(--primary);
     padding:1rem 3rem;
     border-radius:8px;
     text-decoration: none;
     color:white;
     text-align: center;
     margin-bottom: 3rem;
+}
+
+.mainContent a:hover{
+    background-color: var(--primary-dark);
 }
 
 .mainContent__image{

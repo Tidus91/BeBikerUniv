@@ -2,6 +2,7 @@ html{
     --primary:#39D6C0;
     --primary-dark:#18776A;
     --grey-light:#F5F5F5;
+    --header-grey:rgba(255,255,255,25%);
 }
 
 body{
@@ -41,7 +42,7 @@ footer a{
 }
 
 footer a:hover{
-    color:blue;
+    color:white;
 }
 
 /* tablette */

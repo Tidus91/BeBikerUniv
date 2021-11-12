@@ -94,6 +94,10 @@ h2{
     font-weight: 500;
 }
 
+.secondDiv_LinkSoinVelo a:hover{
+    background-color:var(--grey-light);
+}
+
 .secondDiv_LinkAtelier{
     background-color: white;
     display: flex;
@@ -128,6 +132,10 @@ h2{
     border-radius: 8px;
     text-align: center;
     font-weight: 500;
+}
+
+.secondDiv_LinkAtelier a:hover{
+    background-color:var(--primary-dark);
 }
 
 .secondDiv_List{
@@ -202,6 +210,10 @@ h2{
     padding:1.4rem 3rem;
     border-radius: 8px;
     text-align: center;
+}
+
+.secondDiv_List a:hover{
+    background-color:var(--primary-dark);
 }
 
 .secondDiv_image{
